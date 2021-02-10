@@ -12,7 +12,7 @@ using namespace std;
 class Zombie_
 {
 private:
-	int pv = 100;
+	int pv = 102;
 	string nom = "bloark";
 	int attack = 10;
 

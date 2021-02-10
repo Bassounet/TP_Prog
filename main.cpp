@@ -4,6 +4,8 @@ int main() {
     srand(time(NULL));
 	Zombie_ z1;
 
+	cout << "   Zombix  " << endl;
+	// Zombie_ z1(z1);
 	z1.setnom("Zombix");
 	z1.setattack(50);
 	cout << endl;

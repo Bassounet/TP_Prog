@@ -25,12 +25,14 @@ Zombie_::AttackZ(Zombie_ *cible){
     cible->setpv(cible->getpv() - getattack());
 }
 
+/* le problème c'est que je n'ai pas déclaré ShowInfos du coup fonctionne pas
+
 Zombie_::ShowInfos(){
 
 	cout << "Hey i'm : " << getnom() << endl;
 	cout << "Ma santé : " << getpv() << endl;
 	cout << "Mon attaque vaut : " << getattack() << endl;
-}
+} /*/
 
 //GETTER/SETTER Pv
 

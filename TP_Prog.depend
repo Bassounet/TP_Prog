@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1612952404 source:c:\users\grego\desktop\etpa\semestre 2\matieres\prog\cours\tp_prog\main.cpp
+	"Zombie_.h"
+
+1612802657 c:\users\grego\desktop\etpa\semestre 2\matieres\prog\cours\tp_prog\include\zombie_.h
+	<string>
+	<iostream>
+	<random>
+	<ctime>
+	<stdlib.h>
+
+1612952338 source:c:\users\grego\desktop\etpa\semestre 2\matieres\prog\cours\tp_prog\src\zombie_.cpp
+	"Zombie_.h"
+

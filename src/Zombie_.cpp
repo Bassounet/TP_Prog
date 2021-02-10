@@ -17,7 +17,7 @@ Zombie_::Zombie_(string n){
 }
 
 Zombie_::~Zombie_(){
-    cout<<"Le zombie est décédé"<<endl;
+    cout<<"Le zombie est mort"<<endl;
 }
 
 

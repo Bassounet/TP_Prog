@@ -7,14 +7,14 @@ Zombie_::Zombie_(){
 	attack = 0;
 }
 
-Zombie_::Zombie_(int pv,int atk){
+Zombie_::Zombie_(string n, int pv,int atk){
+
+    nom = n
     pv = pv;
     attack = atk;
 }
 
-Zombie_::Zombie_(string n){
-    nom = n;
-}
+
 
 Zombie_::~Zombie_(){
     cout<<"Le zombie est mort"<<endl;

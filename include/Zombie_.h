@@ -9,49 +9,83 @@
 
 using namespace std;
 
-class Zombie_
-{
+class Zombie_{
+
 private:
-	int pv = 102;
-	string nom = "bloark";
-	int attack = 10;
+
+
 
 public:
+
+
+    //VARIABLES
+	string nom;
+	int pv;
+	int attack;
+
+
     //CONSTRUCTEURS
     Zombie_();
-    Zombie_(int pv, int atk);
-    Zombie_(string n);
-
+    Zombie_(string n, int pv, int atk);
 
     //DESTRUCTEUR
     ~Zombie_();
 
+    //FONCTIONS
+	AttackZ(Zombie_ *cible);
+	ShowInfos();
+
     //GETTER/SETTER PV
-	int getPv() const;
-	void setPv(int pv);
+	int getpv() const;
+	void setpv(int pv);
 
     //GETTER/SETTER NOM
-	string getNom() const;
-	void setNom(string n);
+	string getnom() const;
+	void setnom(string n);
 
 
     //GETTER/SETTER ATTACK
-	int getAttack() const;
-	void setAttack(int atk);
+	int getattack() const;
+	void setattack(int atk);
 
 
-    //AFFICHE LES INFOS DU PERSO
-	void showInfos() const;
 
-    void attackPlayer(Zombie_* cible);
-    void healPlayer(Zombie_* cible);
-
-    bool operator==(Zombie_ & p);
-
-    Zombie_ operator+(Zombie_ & p);
-    void operator+=(Zombie_ const & p);
-
-    bool operator!=(Zombie_ & p);
 };
 
-#endif // ZOMBIE_
+ #endif // ZOMBIE_
+
+/* public:
+
+	//VARIABLES
+	string nom;
+	int pv;
+	int force;
+
+	/* //CONSTRUCTEURS
+	zombie();
+	zombie(string n, int p, int f);
+
+	//DESTRUCTEURS
+	~zombie();
+
+	//FONCTIONS
+	AttaqueZombie(zombie *cible);
+	ShowInfos();
+
+	//GETTER/SETTER Nom
+	string getNom() const;
+	void setNom(string n);
+
+	//GETTER/SETTER Pv
+	int getPv() const;
+	void setPv(int p);
+
+	//GETTER/SETTER Force
+	int getForce() const;
+	void setForce(int f);
+
+};
+
+#endif // ZOMBIE_H
+
+*/

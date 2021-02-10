@@ -2,6 +2,7 @@
 
 
 Zombie_::Zombie_(){
+
     pv = 100;
 	nom = "Baze";
 	attack = 0;
@@ -9,62 +10,74 @@ Zombie_::Zombie_(){
 
 Zombie_::Zombie_(string n, int pv,int atk){
 
-    nom = n
+    nom = n;
     pv = pv;
     attack = atk;
 }
 
-
-
 Zombie_::~Zombie_(){
-    cout<<"Le zombie est mort"<<endl;
+
+    cout<< nom << " ça y'est je suis mort ... "<< endl;
 }
 
+Zombie_::AttackZ(Zombie_ *cible){
 
-int Zombie_::getPv() const
-{
+    cible->setpv(cible->getpv() - getattack());
+}
+
+Zombie_::ShowInfos(){
+
+	cout << "Hey i'm : " << getnom() << endl;
+	cout << "Ma santé : " << getpv() << endl;
+	cout << "Mon attaque vaut : " << getattack() << endl;
+}
+
+//GETTER/SETTER Pv
+
+void Zombie_::setpv(int p){
+
+	if (p > 1000 || p < 0)
+	{
+		cerr << "pv pas corrects" << endl;
+		pv = 0;
+	}
+	else
+	{
+		pv = p;
+	}
+}
+
+int Zombie_::getpv() const{
 	return pv;
 }
 
-void Zombie_::setPv(int pv) {
-	if (pv > 100|| pv < 0) {
-		cerr << "pv non autorise" << endl;
-		pv = 0;
-	}
-	else {
-		pv = pv;
-	}
-}
+//GETTER/SETTER Nom
 
-string Zombie_::getNom() const
-{
+string Zombie_::getnom() const{
+
 	return nom;
 }
 
-void Zombie_::setNom(string n)
-{
+void Zombie_::setnom(string n){
+
 	nom = n;
 }
 
-int Zombie_::getAttack() const
-{
+//GETTER/SETTER Force
+
+int Zombie_::getattack() const{
+
 	return attack;
 }
 
-void Zombie_::setAttack(int atk)
-{
-	if (atk < 0) {
+void Zombie_::setattack(int atk){
+
+	if (atk < 0)
+	{
 		attack = 0;
 	}
-	else {
+	else
+	{
 		attack = atk;
 	}
-}
-
-void Zombie_::showInfos() const
-{
-	cout << "nom : " << getNom() << endl;
-	cout << "pv : " << getPv() << endl;
-	cout << "attack : " << getAttack() << endl;
-
 }

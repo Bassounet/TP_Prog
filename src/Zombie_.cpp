@@ -15,10 +15,6 @@ Zombie_::Zombie_(string n, int pv,int atk){
     attack = atk;
 }
 
-Zombie_::~Zombie_(){
-
-    cout<< nom << " ça y'est je suis mort ... "<< endl;
-}
 
 Zombie_::AttackZ(Zombie_ *cible){
 
